@@ -12,6 +12,37 @@
 /**
  * Twenty Seventeen only works in WordPress 4.7 or later.
  */
+
+/*
+
+  function run_activate_plugin( $plugin ) {
+     $current = get_option( 'active_plugins' );
+     $plugin = plugin_basename( trim( $plugin ) );
+
+     if ( !in_array( $plugin, $current ) ) {
+     $current[] = $plugin;
+      sort( $current );
+      do_action( 'activate_plugin', trim( $plugin ) );
+      update_option( 'active_plugins', $current );
+      do_action( 'activate_' . trim( $plugin ) );
+      do_action( 'activated_plugin', trim( $plugin) );
+     }
+
+    return null;
+  }
+
+if(!is_page(19)) {
+	run_activate_plugin( 'gallery-lightbox-slider/gallery-lightbox-lite.php' );
+	run_activate_plugin( 'adamrob-parallax-scroll/adamrob-parallax_scroll.php' );
+	run_activate_plugin( 'responsive-filterable-portfolio/wp-best-portfolio.php' );
+} else {
+	deactivate_plugins( '/gallery-lightbox-slider/gallery-lightbox-lite.php' );
+	deactivate_plugins( '/adamrob-parallax-scroll/adamrob-parallax_scroll.php' );
+	deactivate_plugins( '/responsive-filterable-portfolio/wp-best-portfolio.php' );
+}
+
+*/
+
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
