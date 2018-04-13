@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){var i=parallax_script_options;a("."+i.parallaxcontainerid).each(function(t,n){a(this).css("height",a(this).find("."+i.parallaxdivid).css("height"))})});
