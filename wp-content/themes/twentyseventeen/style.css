@@ -9,6 +9,11 @@ footer #elementor-menu a {
 	color: #fff;
 }
 
+#elementor-menu a:hover {
+	background: none;
+	color: #23A455;
+}
+
 footer .elementor-heading-title.elementor-size-default {
 	color: #fff !important;
    font-size: 16px;
