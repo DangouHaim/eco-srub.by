@@ -40,3 +40,8 @@ footer .elementor-element.elementor-widget.elementor-widget-heading {
 footer .elementor-social-icons-wrapper {
 	text-align: right;
 }
+
+.elementor-section-wrap .elementor-element.elementor-element-76ec20d9.elementor-section-boxed.elementor-section-height-default {
+	width: 100%;
+	position: fixed;
+}
